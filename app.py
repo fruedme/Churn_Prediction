@@ -11,14 +11,13 @@ st.header("Customer Profile")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.text("Sepal characteristics")
     Tenure = st.slider('Tenure', 0, 31, 1)
     Complain = st.slider('Complain', 0, 1, 1)
-
-with col2:
-    st.text("Pepal characteristics")
     Cashback = st.slider('CashbackAmount', 110, 324, 1)
     SatisfactionScore = st.slider('SatisfactionScore', 1, 5, 1)
+
+with col2:
+
 
 st.text('')
 if st.button("Customer churn prediction"):
@@ -30,5 +29,4 @@ if st.button("Customer churn prediction"):
 st.text('')
 st.text('')
 st.markdown(
-    '`Create by` [santiviquez](https://twitter.com/santiviquez) | \
-         `Code:` [GitHub](https://github.com/santiviquez/iris-streamlit)')
+    '`Create by` [Zhengmian Chang | ')
