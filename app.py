@@ -17,6 +17,7 @@ with col1:
     SatisfactionScore = st.slider('SatisfactionScore', 1, 5, 1)
 
 with col2:
+    pass
 
 
 st.text('')
