@@ -15,6 +15,7 @@ with col1:
     Complain = st.slider('Complain', 0, 1, 1)
     Cashback = st.slider('CashbackAmount', 110, 324, 1)
     SatisfactionScore = st.slider('SatisfactionScore', 1, 5, 1)
+    DaysSinceLastOrder = st.slider('DaySinceLastOrder', 0, 30, 1)
 
 with col2:
     pass
@@ -23,7 +24,7 @@ with col2:
 st.text('')
 if st.button("Customer churn prediction"):
     result = predict(
-        np.array([[Tenure, Complain, Cashback, SatisfactionScore]]))
+        np.array([[Tenure, Complain, Cashback, SatisfactionScore, DaysSinceLastOrder]]))
     st.text(result[0])
 
 

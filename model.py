@@ -12,7 +12,7 @@ df = pd.read_csv("churn_predict.csv")
 df.sample(frac=1, random_state=seed)
 
 # selecting features and target data
-X = df[['Tenure', 'Complain', 'SatisfactionScore', 'CashbackAmount']]
+X = df[['Tenure', 'Complain', 'SatisfactionScore', 'CashbackAmount', 'DaySinceLastOrder']]
 y = df[['Churn']]
 
 # split data into train and test sets
